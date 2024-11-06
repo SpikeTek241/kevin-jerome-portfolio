@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Kevin Jerome</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="./Images/NewLogo.png">
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="container">
+            <div class="logo-holder">
+                <div class="logo">
+                    <h1>Kevin Jerome</h1>
+                </div>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html" class="button-contact">Contact</a></li>
+                </ul>
+                <a href="#" class="mobile-toggle" onClick="toggleMobileMenu();" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <line x1="4" y1="8" x2="20" y2="8" />
+                        <line x1="4" y1="16" x2="20" y2="16" />
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio py-16">
+            <h2 class="text-3xl font-bold text-center text-burgundy-800 mb-8">My Portfolio</h2>
+            <div class="portfolio-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="portfolio-item relative">
+                    <img src="./Images/portfolio1.jpg" alt="Project 1" class="w-full h-60 object-cover rounded-lg">
+                    <div class="portfolio-overlay absolute inset-0 bg-burgundy-800 bg-opacity-75 flex items-center justify-center opacity-0 hover:opacity-100 transition">
+                        <div class="text-center text-white">
+                            <h4 class="text-2xl font-bold mb-2">Project Title 1</h4>
+                            <p>A brief description of the project goes here.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item relative">
+                    <img src="./Images/portfolio2.jpg" alt="Project 2" class="w-full h-60 object-cover rounded-lg">
+                    <div class="portfolio-overlay absolute inset-0 bg-burgundy-800 bg-opacity-75 flex items-center justify-center opacity-0 hover:opacity-100 transition">
+                        <div class="text-center text-white">
+                            <h4 class="text-2xl font-bold mb-2">Project Title 2</h4>
+                            <p>A brief description of the project goes here.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item relative">
+                    <img src="./Images/portfolio3.jpg" alt="Project 3" class="w-full h-60 object-cover rounded-lg">
+                    <div class="portfolio-overlay absolute inset-0 bg-burgundy-800 bg-opacity-75 flex items-center justify-center opacity-0 hover:opacity-100 transition">
+                        <div class="text-center text-white">
+                            <h4 class="text-2xl font-bold mb-2">Project Title 3</h4>
+                            <p>A brief description of the project goes here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-gray-300 mt-12 py-6 text-center">
+        <div class="container">
+            <p class="text-burgundy-800">Kevin Jerome &copy; 2024 | All Rights Reserved</p>
+            <div class="social-links mt-4">
+                <a href="https://www.linkedin.com/in/kevin-jerome-10371a234/" target="_blank" aria-label="LinkedIn" class="mx-2 text-burgundy-800 hover:text-burgundy-900"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/SpikeTek241/Spiketek.github.io" target="_blank" aria-label="GitHub" class="mx-2 text-burgundy-800 hover:text-burgundy-900"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
